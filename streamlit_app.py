@@ -56,8 +56,6 @@ streamlit.dataframe(fruits_to_show)
 # except URLError as e:
 #     streamlit.error()
 
-streamlit.stop()
-
 # -----------------------------------------------------------------------------------------------------------
 # rewritten section with function
 def get_fruityvice_data(this_fruit_choice):
@@ -76,7 +74,7 @@ try:
 
 # -----------------------------------------------------------------------------------------------------------
 
-streamlit.header("The fruit load list contains:")
+streamlit.header('The fruit load list contains:')
 # Snowflake-related functions
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
