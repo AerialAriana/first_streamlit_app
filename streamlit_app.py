@@ -56,6 +56,8 @@ streamlit.dataframe(fruits_to_show)
 # except URLError as e:
 #     streamlit.error()
 
+streamlit.stop()
+
 # -----------------------------------------------------------------------------------------------------------
 # rewritten section with function
 def get_fruityvice_data(this_fruit_choice):
@@ -87,7 +89,7 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
-streamlit.stop()
+
 
 # ----------------------------------------------------------------------------------------------------------- 
 # do not run anything past here while we troubleshoot
